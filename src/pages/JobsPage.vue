@@ -30,11 +30,11 @@ async function getJobs() {
 <template>
   <div class="container">
     <h1>Welcome to the jobs page ✌️☮️</h1>
-    <div class="row" v-for="job in jobs" :key="job.id">
-      <JobCard :job="job" />
-
+    <div class="row">
+      <div class="col-md-6" v-for="job in jobs" :key="job.id">
+        <JobCard :job="job" />
+      </div>
     </div>
-
   </div>
 </template>
 

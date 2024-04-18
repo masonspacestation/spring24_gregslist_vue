@@ -7,6 +7,9 @@ import { api } from "./AxiosService.js"
 
 
 class JobsService {
+  removeJob(job) {
+    throw new Error("Method not implemented.");
+  }
   async getJobs() {
     const response = await api.get('api/jobs')
     console.log(response.data);

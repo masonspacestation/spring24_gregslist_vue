@@ -9,8 +9,8 @@ export class Job {
     this.hours = data.hours
     this.rate = data.rate
     this.description = data.description
-    this.createdAt = data.createdAt
-    this.updatedAt = data.updatedAt
+    this.createdAt = new Date(data.createdAt)
+    this.updatedAt = new Date(data.updatedAt)
 
     this.creatorId = data.creatorId
     this.creator = data.creator //has _id, id, name, picture
